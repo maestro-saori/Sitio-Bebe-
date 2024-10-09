@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Fundraising YouTube Channel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+          <ul>
+            <li><a href="Sitio Bebe.html">Sitio Bebe Case</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="youtubechannel.html">Youtube Channel</a></li>
+          <li><a href="donations.html">Donate Here</a></li>
+        </ul>
+      </nav>
+</div>
+
+<section id="donation-tracker">
+    <h2>Donation Tracker</h2>
+    <p>Total Donations: <span id="totalDonations">0</span> USD</p>
+    <div class="progress-bar">
+        <div id="donationProgress"></div>
+    </div>
+    <button onclick="updateDonationTracker(50)">Donate ₱50</button>
+    <button onclick="updateDonationTracker(100)">Donate ₱100</button>
+</section>
+
+<section id="chat">
+    <h2>Chat Commands</h2>
+    <p>Type a command in the box below (e.g., hello, donate, rules):</p>
+    <input type="text" id="chatCommand" placeholder="Enter chat command...">
+    <button onclick="handleChatCommand(document.getElementById('chatCommand').value)">Send</button>
+    <div id="chatBox"></div>
+</section>
+</body>
+</html>
